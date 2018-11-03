@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 
 void main() {
 
@@ -10,34 +10,32 @@ printf("Queue Menu\n");
 printf("1.) Insert\n");
 printf("2.) Delete\n");
 printf("3.) Show\n");
-printf("Enter Choice and press 0 to exit anytime\n);
+printf("Enter Choice and press 0 to exit anytime\n");
 scanf("%d",&j);
 
 if(j==1) {
 printf("Enter Number and 0 for exit \n");
 for(i=0;i!='\0';i++) {
-scanf("%d",&num);
-que[R]=num;
-R++
+scanf("%d",&num1);
+que[R]=num1;
+R++;
+}
 }
 
 else if(j==2) {
 printf("Enter Number\n");
-scanf("%d",&num2");
-find=f;
+scanf("%d",&num2);
+int find=F;
 while(que[find]!=num2){
 find++;
 }
 que[find]=que[find+1];
 }
 
-else {
+else if ( j==3 ){
 for(i=0;i<=R;i++)
 printf("%d",que[i]);
 }
 
 }
-
-
-
 
