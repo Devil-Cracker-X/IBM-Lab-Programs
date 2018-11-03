@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main() {
+
+int num1,num2,que[100],i,j,F=0,R=0;
+
+
+printf("Queue Menu\n");
+printf("1.) Insert\n");
+printf("2.) Delete\n");
+printf("3.) Show\n");
+printf("Enter Choice and press 0 to exit anytime\n);
+scanf("%d",&j);
+
+if(j==1) {
+printf("Enter Number and 0 for exit \n");
+for(i=0;i!='\0';i++) {
+scanf("%d",&num);
+que[R]=num;
+R++
+}
+
+else if(j==2) {
+printf("Enter Number\n");
+scanf("%d",&num2");
+find=f;
+while(que[find]!=num2){
+find++;
+}
+que[find]=que[find+1];
+}
+
+else {
+for(i=0;i<=R;i++)
+printf("%d",que[i]);
+}
+
+}
+
+
+
+
