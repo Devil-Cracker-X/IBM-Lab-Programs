@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main() {
+
+	int stk[100],num,i,j,r=-1,ele;
+	clrscr();
+
+	printf("Main Menu\n");
+	printf("1 Insert\n");
+	printf("2 Delete\n");
+	printf("3 Display\n");
+	printf("Choose and 0 to exit any time\n");
+
+	scanf("%d",&j);
+
+	if(j==1){
+		printf("Enter Number\n");
+		for(i=0;i!='\0';i++){
+		scanf("%d",&num);
+		stk[i]=num;
+		r++;
+		if(num==0)
+		break;
+		}
+	}
+
+	else if(j==2){
+
+		if(r==-1){
+			printf("Empty Stack\n");
+		}
+
+		else {
+		printf("Enter number of elements to be deleted\n");
+		scanf("%d",&ele);
+		for(i=0;i<=ele;i++){
+
+		      stk[r-1]=stk[r];
+		      stk[r]='\0';
+		r--;
+
+		if(ele==0)
+		break;
+		}
+	}
+
+ }
+	else if(j==3){
+		for(i=0;i<=r;i++){
+			printf("%d",stk[i]);
+			printf("\n");
+		}
+
+	}
+
+	else
+		printf("Enter Valid Choice");
+
+return 0;
+
+}
