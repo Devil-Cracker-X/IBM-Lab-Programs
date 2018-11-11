@@ -7,8 +7,8 @@ int main() {
 	clrscr();
 
 	printf("Main Menu\n");
-	printf("1 Insert\n");
-	printf("2 Delete\n");
+	printf("1 PUSH\n");
+	printf("2 POP\n");
 	printf("3 Display\n");
 	printf("Choose and 0 to exit any time\n");
 
